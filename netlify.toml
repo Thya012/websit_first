@@ -12,8 +12,7 @@
 package = "netlify-plugin-image-optim"
 [[plugins]]
   package = "netlify-plugin-inline-critical-css"
-[[plugins]]
-  package = "@netlify/plugin-lighthouse"
+
 
 [build.environment]
   NODE_VERSION = "18.20.2"
