@@ -9,9 +9,9 @@
   package = "@netlify/plugin-lighthouse"
 
 [[plugins]]
-package = "netlify-plugin-image-optim"
+package = "@netlify-plugin-image-optim"
 [[plugins]]
-  package = "netlify-plugin-inline-critical-css"
+  package = "@netlify-plugin-inline-critical-css"
 
 
 [build.environment]
