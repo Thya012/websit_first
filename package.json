@@ -9,7 +9,11 @@
   },
   "dependencies": {
     "core-js": "^3.8.3",
-    "vue": "^3.2.13"
+    "i18n": "^0.15.1",
+    "pinia": "^2.2.2",
+    "vue": "^3.2.13",
+    "vue-i18n": "^9.14.1",
+    "vue-router": "^4.4.5"
   },
   "devDependencies": {
     "@babel/core": "^7.12.16",
@@ -32,7 +36,11 @@
     "parserOptions": {
       "parser": "@babel/eslint-parser"
     },
-    "rules": {}
+    "rules": {
+      "vue/multi-word-component-names": "off",
+      "vue/no-unused-components": "off",
+      "eslint-disable": "off"
+    }
   },
   "browserslist": [
     "> 1%",
