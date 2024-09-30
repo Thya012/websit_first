@@ -9,9 +9,8 @@
                   <h2 class="u-heading-v5__title g-line-height-1_2 g-font-weight-700 g-font-size-32 g-font-size-40--md g-color-white g-bg-white--before g-pb-40">We are the best</h2>
                 </div>
 
-                <p class="g-color-white-opacity-0_7 g-mb-15">Sed feugiat porttitor nunc, non dignissim ipsum vestibulum in. Donec in blandit dolor. Vivamus a fringilla lorem, vel faucibus ante. Nunc ullamcorper, justo a iaculis elementum, enim orci viverra eros, fringilla porttitor lorem eros vel.</p>
-                <p class="g-color-white-opacity-0_7 mb-0">Fringilla lorem, vel faucibus ante. Nunc ullamcorper, justo a iaculis elementum, enim orci viverra eros, fringilla porttitor lorem eros vel.</p>
-              </div>
+                <p class="g-color-white-opacity-0_7 g-mb-15">Phnom Penh's dining scene has blossomed in recent years, offering a vibrant mix of local and international flavors. From budget-friendly street food to upscale fine dining, the city caters to every taste bud and budget. Let's start your culinary adventure with us as we explore the vibrant flavors of Phnom Penh and unveil the best restaurants waiting to be discovered!</p>
+                              </div>
             </div>
 
             <div class="col-lg-6">

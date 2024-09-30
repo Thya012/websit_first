@@ -7,54 +7,43 @@
             <h2 class="u-heading-v5__title g-line-height-1_2 g-font-weight-700 g-font-size-32 g-font-size-40--md g-bg-primary--before g-pb-40">What do we propose</h2>
           </div>
 
-          <p class="mb-0">Sed feugiat porttitor nunc, non dignissim ipsum vestibulum in. Donec in blandit dolor. Vivamus a fringilla lorem, vel faucibus ante.</p>
+          <p class="mb-0">The restaurants make you love. Find the right food and groceries to suit your mood</p>
         </div>
 
         <div class="container text-center">
           <!-- Row -->
           <div class="row">
-            <div class="col-md-6 col-lg-3 g-mb-40 g-mb-0--lg">
+            <div class="col-md-6 col-lg-3 g-mb-40 g-mb-0--lg" v-for="(item, index) in services" :key="index">
               <span class="u-icon-v1 u-icon-size--3xl g-color-primary g-mb-15">
-                <i class="icon-food-039 u-line-icon-pro"></i>
+               <img :src="item.image" alt="" width="60px">
               </span>
               <h3 class="h6 text-uppercase g-font-weight-600 g-mb-25">
-                <a class="g-color-black g-color-primary--hover g-text-underline--none--hover" href="#!">Catering</a>
+                <a class="g-color-black g-color-primary--hover g-text-underline--none--hover" href="#!">{{ item.title }}</a>
               </h3>
-              <p class="g-font-size-default mb-0">Nunc ligula nulla, efficitur et eros ut, vulputate gravida leo. Vestibulum ante ipsum primis in faucibus orci luctus et.</p>
+              <p class="g-font-size-default mb-0 " style="text-align: justify;">{{ item.description }}</p>
             </div>
 
-            <div class="col-md-6 col-lg-3 g-mb-40 g-mb-0--lg">
-              <span class="u-icon-v1 u-icon-size--3xl g-color-primary g-mb-15">
-                <i class="icon-food-008 u-line-icon-pro"></i>
-              </span>
-              <h3 class="h6 text-uppercase g-font-weight-600 g-mb-25">
-                <a class="g-color-black g-color-primary--hover g-text-underline--none--hover" href="#!">Wine collection</a>
-              </h3>
-              <p class="g-font-size-default mb-0">Nunc ligula nulla, efficitur et eros ut, vulputate gravida leo. Vestibulum ante ipsum primis in faucibus orci luctus et.</p>
-            </div>
-
-            <div class="col-md-6 col-lg-3 g-mb-40 g-mb-0--lg">
-              <span class="u-icon-v1 u-icon-size--3xl g-color-primary g-mb-15">
-                <i class="icon-food-001 u-line-icon-pro"></i>
-              </span>
-              <h3 class="h6 text-uppercase g-font-weight-600 g-mb-25">
-                <a class="g-color-black g-color-primary--hover g-text-underline--none--hover" href="#!">Custom orders</a>
-              </h3>
-              <p class="g-font-size-default mb-0">Nunc ligula nulla, efficitur et eros ut, vulputate gravida leo. Vestibulum ante ipsum primis in faucibus orci luctus et.</p>
-            </div>
-
-            <div class="col-md-6 col-lg-3">
-              <span class="u-icon-v1 u-icon-size--3xl g-color-primary g-mb-15">
-                <i class="icon-food-276 u-line-icon-pro"></i>
-              </span>
-              <h3 class="h6 text-uppercase g-font-weight-600 g-mb-25">
-                <a class="g-color-black g-color-primary--hover g-text-underline--none--hover" href="#!">Wine collection</a>
-              </h3>
-              <p class="g-font-size-default mb-0">Nunc ligula nulla, efficitur et eros ut, vulputate gravida leo. Vestibulum ante ipsum primis in faucibus orci luctus et.</p>
-            </div>
+           
           </div>
           <!-- End Row -->
         </div>
       </section>
       <!-- End Section Content -->
 </template>
+
+<script>
+import { useServicesStore } from '@/store/liberary';
+import { mapState } from 'pinia';
+export default {
+    data() {
+
+        return {
+        }
+    },
+    computed: {
+                ...mapState(useServicesStore, ['services']),
+              
+            },
+    
+}
+</script>

@@ -37,12 +37,12 @@
                 <div class="tab-pane fade show active" id="breakfast" role="tabpanel">
                     <!-- Products Block -->
                     <div class="row">
-                        <div class="col-md-6 g-mb-50">
+                        <div class="col-md-6 g-mb-50" v-for="(item, index) in breakfasts" :key="index">
                             <!-- Article -->
                             <article class="media">
                                 <!-- Article Image -->
                                 <a class="g-width-100" href="#!">
-                                    <img class="img-fluid g-rounded-50x" src="assets/img/food/img-5.jpg"
+                                    <img class="img-fluid g-rounded-50x" :src="item.image"
                                         alt="Image description">
                                 </a>
                                 <!-- End Article Image -->
@@ -53,66 +53,37 @@
                                         class="d-flex justify-content-between u-heading-v1-4 g-bg-main g-theme-brd-gray-light-v1 g-mb-8">
                                         <h3
                                             class="align-self-center u-heading-v1__title g-color-black g-font-weight-700 g-font-size-13 text-uppercase mb-0">
-                                            Croissants</h3>
+                                            {{ item.title }}</h3>
 
                                         <div class="align-self-center g-pos-rel g-bg-main g-pl-15">
                                             <strong
-                                                class="g-font-weight-700 g-font-size-13 g-color-white g-bg-primary g-rounded-3 g-py-4 g-px-12">$1.20</strong>
+                                                class="g-font-weight-700 g-font-size-13 g-color-white g-bg-primary g-rounded-3 g-py-4 g-px-12">{{ item.price }}</strong>
                                         </div>
                                     </div>
 
-                                    <p class="mb-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                                    <p class="mb-0">{{ item.description }}</p>
                                 </div>
                                 <!-- End Article Content -->
                             </article>
                             <!-- End Article -->
                         </div>
 
-                        <div class="col-md-6 g-mb-50">
-                            <!-- Article -->
-                            <article class="media">
-                                <!-- Article Image -->
-                                <a class="g-width-100" href="#!">
-                                    <img class="img-fluid g-rounded-50x" src="assets/img/food/img-6.jpg"
-                                        alt="Image description">
-                                </a>
-                                <!-- End Article Image -->
-
-                                <!-- Article Content -->
-                                <div class="media-body align-self-center g-pl-10">
-                                    <div
-                                        class="d-flex justify-content-between u-heading-v1-4 g-bg-main g-theme-brd-gray-light-v1 g-mb-8">
-                                        <h3
-                                            class="align-self-center u-heading-v1__title g-color-black g-font-weight-700 g-font-size-13 text-uppercase mb-0">
-                                            Croissants</h3>
-
-                                        <div class="align-self-center g-pos-rel g-bg-main g-pl-15">
-                                            <strong
-                                                class="g-font-weight-700 g-font-size-13 g-color-white g-bg-primary g-rounded-3 g-py-4 g-px-12">$1.20</strong>
-                                        </div>
-                                    </div>
-
-                                    <p class="mb-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                                </div>
-                                <!-- End Article Content -->
-                            </article>
-                            <!-- End Article -->
-                        </div>
+                       
                     </div>
                     <!-- End Products Block -->
 
                    
                 </div>
-
+ <!-- Lunch Block -->
                 <div class="tab-pane fade" id="lunch" role="tabpanel">
                     <!-- Products Block -->
                     <div class="row">
-                        <div class="col-md-6 g-mb-50">
+                        <div class="col-md-6 g-mb-50" v-for="(item, index) in lunches" :key="index">
                             <!-- Article -->
                             <article class="media">
                                 <!-- Article Image -->
                                 <a class="g-width-100" href="#!">
-                                    <img class="img-fluid g-rounded-50x" src="assets/img/food/img-9.jpg"
+                                    <img class="img-fluid g-rounded-50x" :src="item.image"
                                         alt="Image description">
                                 </a>
                                 <!-- End Article Image -->
@@ -123,51 +94,21 @@
                                         class="d-flex justify-content-between u-heading-v1-4 g-bg-main g-theme-brd-gray-light-v1 g-mb-8">
                                         <h3
                                             class="align-self-center u-heading-v1__title g-color-black g-font-weight-700 g-font-size-13 text-uppercase mb-0">
-                                            Croissants</h3>
+                                            {{ item.title }}</h3>
 
                                         <div class="align-self-center g-pos-rel g-bg-main g-pl-15">
                                             <strong
-                                                class="g-font-weight-700 g-font-size-13 g-color-white g-bg-primary g-rounded-3 g-py-4 g-px-12">$1.20</strong>
+                                                class="g-font-weight-700 g-font-size-13 g-color-white g-bg-primary g-rounded-3 g-py-4 g-px-12">{{ item.price }}</strong>
                                         </div>
                                     </div>
 
-                                    <p class="mb-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                                    <p class="mb-0">{{ item.description }}</p>
                                 </div>
                                 <!-- End Article Content -->
                             </article>
                             <!-- End Article -->
                         </div>
-
-                        <div class="col-md-6 g-mb-50">
-                            <!-- Article -->
-                            <article class="media">
-                                <!-- Article Image -->
-                                <a class="g-width-100" href="#!">
-                                    <img class="img-fluid g-rounded-50x" src="assets/img/food/img-10.jpg"
-                                        alt="Image description">
-                                </a>
-                                <!-- End Article Image -->
-
-                                <!-- Article Content -->
-                                <div class="media-body align-self-center g-pl-10">
-                                    <div
-                                        class="d-flex justify-content-between u-heading-v1-4 g-bg-main g-theme-brd-gray-light-v1 g-mb-8">
-                                        <h3
-                                            class="align-self-center u-heading-v1__title g-color-black g-font-weight-700 g-font-size-13 text-uppercase mb-0">
-                                            Croissants</h3>
-
-                                        <div class="align-self-center g-pos-rel g-bg-main g-pl-15">
-                                            <strong
-                                                class="g-font-weight-700 g-font-size-13 g-color-white g-bg-primary g-rounded-3 g-py-4 g-px-12">$1.20</strong>
-                                        </div>
-                                    </div>
-
-                                    <p class="mb-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                                </div>
-                                <!-- End Article Content -->
-                            </article>
-                            <!-- End Article -->
-                        </div>
+\
                     </div>
                     <!-- End Products Block -->
 
@@ -177,12 +118,12 @@
                 <div class="tab-pane fade" id="dinner" role="tabpanel">
                     <!-- Products Block -->
                     <div class="row">
-                        <div class="col-md-6 g-mb-50">
+                        <div class="col-md-6 g-mb-50" v-for="(item, index) in dinners"  :key="index">
                             <!-- Article -->
                             <article class="media">
                                 <!-- Article Image -->
                                 <a class="g-width-100" href="#!">
-                                    <img class="img-fluid g-rounded-50x" src="assets/img/food/img-5.jpg"
+                                    <img class="img-fluid g-rounded-50x" :src="item.image"
                                         alt="Image description">
                                 </a>
                                 <!-- End Article Image -->
@@ -193,51 +134,22 @@
                                         class="d-flex justify-content-between u-heading-v1-4 g-bg-main g-theme-brd-gray-light-v1 g-mb-8">
                                         <h3
                                             class="align-self-center u-heading-v1__title g-color-black g-font-weight-700 g-font-size-13 text-uppercase mb-0">
-                                            Croissants</h3>
+                                            {{ item.title }}</h3>
 
                                         <div class="align-self-center g-pos-rel g-bg-main g-pl-15">
                                             <strong
-                                                class="g-font-weight-700 g-font-size-13 g-color-white g-bg-primary g-rounded-3 g-py-4 g-px-12">$1.20</strong>
+                                                class="g-font-weight-700 g-font-size-13 g-color-white g-bg-primary g-rounded-3 g-py-4 g-px-12">{{ item.price }}</strong>
                                         </div>
                                     </div>
 
-                                    <p class="mb-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                                    <p class="mb-0">{{ item.description }}</p>
                                 </div>
                                 <!-- End Article Content -->
                             </article>
                             <!-- End Article -->
                         </div>
 
-                        <div class="col-md-6 g-mb-50">
-                            <!-- Article -->
-                            <article class="media">
-                                <!-- Article Image -->
-                                <a class="g-width-100" href="#!">
-                                    <img class="img-fluid g-rounded-50x" src="assets/img/food/img-6.jpg"
-                                        alt="Image description">
-                                </a>
-                                <!-- End Article Image -->
-
-                                <!-- Article Content -->
-                                <div class="media-body align-self-center g-pl-10">
-                                    <div
-                                        class="d-flex justify-content-between u-heading-v1-4 g-bg-main g-theme-brd-gray-light-v1 g-mb-8">
-                                        <h3
-                                            class="align-self-center u-heading-v1__title g-color-black g-font-weight-700 g-font-size-13 text-uppercase mb-0">
-                                            Croissants</h3>
-
-                                        <div class="align-self-center g-pos-rel g-bg-main g-pl-15">
-                                            <strong
-                                                class="g-font-weight-700 g-font-size-13 g-color-white g-bg-primary g-rounded-3 g-py-4 g-px-12">$1.20</strong>
-                                        </div>
-                                    </div>
-
-                                    <p class="mb-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                                </div>
-                                <!-- End Article Content -->
-                            </article>
-                            <!-- End Article -->
-                        </div>
+                        
                     </div>
                     <!-- End Products Block -->
 
@@ -248,3 +160,22 @@
     </section>
     <!-- End Section Content -->
 </template>
+
+<script>
+import { useBreafastStore, useLunchStore, useDinnerStore } from '@/store/liberary';
+import { mapState } from 'pinia';
+export default {
+    data() {
+
+        return {
+        }
+    },
+    computed: {
+                ...mapState(useBreafastStore, ['breakfasts']),
+                ...mapState(useLunchStore, ['lunches']),
+                ...mapState(useDinnerStore, ['dinners']),
+            },
+    
+}
+
+</script>

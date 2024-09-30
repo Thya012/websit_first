@@ -1,7 +1,7 @@
 <template>
   <footer id="contact-section" class="g-pos-rel">
         <!-- Content -->
-        <div class="g-bg-size-cover g-bg-img-hero u-bg-overlay g-bg-black-opacity-0_7--after g-pt-120 g-pb-70" style="background-image: url(assets/img-temp/1920x1080/img4.jpg);">
+        <div class="g-bg-size-cover g-bg-img-hero u-bg-overlay g-bg-black-opacity-0_7--after g-pt-120 g-pb-70" style="background-image: url();">
           <div class="container u-bg-overlay__inner">
             <div class="row align-items-center">
               <div class="col-md-4 g-mb-50">
@@ -15,7 +15,7 @@
                     </span>
                   </div>
                   <div class="media-body">
-                    <p class="g-color-white-opacity-0_6 mb-0">5B Streat, City 50987 New Town US</p>
+                    <p class="g-color-white-opacity-0_6 mb-0">Borey Mekong Royal, 310 Street GS, Phnom Penh 121002</p>
                   </div>
                 </div>
                 <!-- End Icon Block -->
@@ -28,7 +28,7 @@
                     </span>
                   </div>
                   <div class="media-body">
-                    <p class="g-color-white-opacity-0_6 mb-0">+32 (0) 333 444 555</p>
+                    <p class="g-color-white-opacity-0_6 mb-0">+855 (0) 12 776 000</p>
                   </div>
                 </div>
                 <!-- End Icon Block -->
@@ -41,7 +41,7 @@
                     </span>
                   </div>
                   <div class="media-body">
-                    <p class="g-color-white-opacity-0_6 mb-0">htmlstream@support.com</p>
+                    <p class="g-color-white-opacity-0_6 mb-0">info@codekhmer.com</p>
                   </div>
                 </div>
                 <!-- End Icon Block -->
@@ -121,7 +121,7 @@
 
         <!-- Copyright -->
         <div class="container text-center g-py-30">
-          <p class="g-font-size-13 mb-0">© 2018 Htmlstream. All Rights Reserved.</p>
+          <p class="g-font-size-13 mb-0">© 2024 Codekhmer. All Rights Reserved.</p>
         </div>
         <!-- End Copyright -->
       </footer>

@@ -1,5 +1,5 @@
 <template>
-    <Special/>
+    <Special />
 </template>
 <script>
     import Special from '@/components/Special.vue';

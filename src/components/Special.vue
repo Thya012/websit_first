@@ -1,6 +1,6 @@
 <template>
   <!-- Section Content -->
-  <section id="specialOffers">
+  <section id="specialOffers" >
     <div class="container ">
       <div class=" g-brd-primary ">
         <h2 class="text-uppercase u-heading-v2__title g-line-height-1_3 g-font-weight-700 g-font-size-26 g-mb-60">
@@ -104,5 +104,25 @@
       </div>
     </div>
   </section>
+ 
   <!-- End Section Content -->
 </template>
+<script>
+
+//import * as Myscript from '/assets/js/components/hs.go-to.js';
+export default {
+  created(){
+    const plugin = document.createElement('script');
+   
+    plugin.setAttribute(
+'src',
+'assets/js/components/hs.carousel.js'
+    );
+    plugin.async =true;
+    document.head.append(plugin);
+    //alert('dddd');
+   //document.HSCore.components.HSGoTo.init('.js-go-to');
+  }
+}
+
+</script>

@@ -24,7 +24,7 @@
                         {{ $t(item.description) }}
                       </p>
                       <div class="btn-box">
-                        <a href="/register" class="btn1"> {{$t('register')}} </a>
+                        <RouterLink to="/register"  class="btn1"> {{$t('register')}} </RouterLink>
                       </div>
                     </div>
                   </div>
