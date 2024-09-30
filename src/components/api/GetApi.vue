@@ -37,7 +37,7 @@ export default {
   async created() {
     try {
      
-      const response = await axios.get("/v1/courses");
+      const response = await axios.get("https://demo-api.tfdevs.com/v1/courses");
       console.log(response);
       const courses = response.data;
       this.courses = courses;

@@ -108,9 +108,10 @@
   <!-- End Section Content -->
 </template>
 <script>
-
+//import Test from '@/components/Test.vue'
 //import * as Myscript from '/assets/js/components/hs.go-to.js';
 export default {
+  
   created(){
     const plugin = document.createElement('script');
    
