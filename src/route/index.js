@@ -8,7 +8,10 @@ const GetApi = () => import( '@/components/api/GetApi.vue')
 const Services = () => import( '@/components/Services.vue')
 const NotFound = () => import('@/components/NotFound.vue')
 const Register = () => import('@/pages/auth/Register.vue')
+const Login = () => import('@/pages/auth/Login.vue')
+
 import Special from '@/components/Special.vue'
+//import Special2 from '@/components/Special2.vue'
 
 
 const routes = [
@@ -21,7 +24,8 @@ const routes = [
     { path: '/food', component: GetApi },
     { path: '/service', component: Services },
     { path: '/register', component: Register },
-
+    { path: '/login', component: Login },
+    
     { path: '/:pathMatch(.*)*', component: NotFound},
 ]
 

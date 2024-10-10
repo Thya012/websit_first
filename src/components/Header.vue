@@ -16,7 +16,7 @@
 
                     <!-- Navigation -->
                     <div class="collapse navbar-collapse align-items-center flex-sm-row" id="navBar">
-                        <ul id="js-scroll-nav" class="navbar-nav text-uppercase g-letter-spacing-1 g-font-size-16 g-pt-20 g-pt-0--lg ml-auto ">
+                        <ul id="js-scroll-nav" class="koulen-regular  navbar-nav text-uppercase g-letter-spacing-1 g-font-size-18 g-pt-20 g-pt-0--lg ml-auto ">
                             <li class="nav-item g-mr-30--lg g-mb-7 g-mb-0--lg" v-for="(item, index) in navs" :key="index"
                             :class="{active: $route.path == item.path}"> 
                             <router-link :to=item.path class="nav-link">{{ $t(item.name) }} <span
@@ -79,11 +79,11 @@ export default {
             if (this.$i18n.locale == "en") {
                 this.$i18n.locale = "khm";
                 this.currentImage = 0;
-                // alert(this.currentImage);
+                
             } else {
                 this.$i18n.locale = "en";
                 this.currentImage = 1;
-                //alert(this.currentImage);
+                
             }
 
 

@@ -8,25 +8,10 @@
                         <div class="row justify-content-center">
                             <div class="col-md-10 col-lg-6 col-xl-5 order-2 order-lg-1">
 
-                                <p class="text-center text-body h1 fw-bold mb-5 mt-4">Sign up</p>
+                                <p class="text-center text-body h1 fw-bold mb-5 mt-4">Sign in</p>
 
                                 <form @submit.prevent="uploadFile">
 
-                                    <div class="d-flex flex-row align-items-center mb-4">
-
-                                        <div data-mdb-input-init="" class="form-outline flex-fill mb-0"
-                                            data-mdb-input-initialized="true">
-                                            <label class="form-label" for="form3Example1c"
-                                                style="margin-right: 20px;">Your Name</label>
-                                            <input type="text" name="name" v-model="name">
-                                            <div class="form-notch">
-
-                                                <div class="form-notch-middle"
-                                                    style="padding-top: 20px; font-size: 10px;"></div>
-
-                                            </div>
-                                        </div>
-                                    </div>
                                     <div class="d-flex flex-row align-items-center mb-4">
 
                                         <div data-mdb-input-init="" class="form-outline flex-fill mb-0"
@@ -45,38 +30,42 @@
                                             </div>
                                         </div>
                                     </div>
-
                                     <div class="d-flex flex-row align-items-center mb-4">
 
-                                        <div data-mdb-input-init="" class="form-outline flex-fill mb-0"
-                                            data-mdb-input-initialized="true">
-                                            <label class="form-label" for="form3Example4c"
-                                                style="margin-right: 20px;">Upload File</label>
-                                            <input type="file" @change="onFileChange" ref="fileUpload" multiple />
+<div data-mdb-input-init="" class="form-outline flex-fill mb-0"
+    data-mdb-input-initialized="true">
+    <label class="form-label" for="form3Example1c"
+        style="margin-right: 20px;">Password</label>
+    <Field type="password" name="password" required
+        placeholder="password" />
+    <div class="form-notch">
 
-                                            <div class="form-notch">
-                                                <div class="form-notch-middle"
-                                                    style="padding-top: 20px; font-size: 10px;">
-                                                    <ErrorMessage name="file" class="alert alert-danger" />
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
+        <div class="form-notch-middle"
+            style="padding-top: 20px; font-size: 10px;">
+            <ErrorMessage name="email" class="alert alert-danger" />
+        </div>
 
+    </div>
+</div>
+</div>
+
+
+                                   
 
 
                                     <div class="d-flex justify-content-center mx-4 mb-3 mb-lg-4">
                                         <button type="submit" data-mdb-button-init="" data-mdb-ripple-init=""
                                             class="btn btn-primary btn-lg"
-                                            data-mdb-button-initialized="true">Register</button>
+                                            data-mdb-button-initialized="true">login</button>
                                     </div>
+                                    <p>Please  <RouterLink to="/register"  class="btn1"> {{$t('register')}} </RouterLink></p>
 
                                 </form>
 
                             </div>
                             <div class="col-md-10 col-lg-6 col-xl-7 d-flex align-items-center order-1 order-lg-2">
 
-                                <img src="assets/img/signup.webp"
+                                <img src="assets/img/login.png"
                                     class="img-fluid" alt="Sample image">
 
                             </div>

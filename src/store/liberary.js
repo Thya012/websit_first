@@ -87,25 +87,25 @@ const useServicesStore = defineStore('services',{
     services: [
         {
           image:"assets/icon/catering.png",
-          title:"Catering",
-          description:"Elevate your events with J Lin Restuarent with the premier catering services. Whether it’s an intimate business lunch or a grand celebration,we specialize in delivering exceptional, bespoke dining experiences across Phnom Penh."
+          title:"catering_title",
+          description:"catering_desc"
 
         },
         {
           image:"assets/icon/wine.png",
-          title:"Wine collection",
-          description:"Wine Connection is the leading chain of wine shops and wine-themed restaurants in South-East Asia. Established in 1998, Wine Connection has been developing expertise in wine for over 20 years."
+          title:"win_title",
+          description:"win_desc"
 
         },
         {
           image:"assets/icon/customer.png",
-          title:"Catering",
-          description:"An order issued on receiving an order form customers, and refers to the order information received from customers. It is given customer number and the number of the person in charge of receiving the order as well as product number, delivery date, and quantity."
+          title:"chat_title",
+          description:"chat_desc"
 
         },{
           image:"assets/icon/delivery.png",
-          title:"Delivery",
-          description:" We cooperate with the best devivery partner to list your menu and product lists online, help you process orders, pick them up, and deliver to customers – in a heartbeat!"
+          title:"delivery_title",
+          description:"delivery_desc"
         }],
        
   }),
@@ -156,7 +156,39 @@ const useNavStore = defineStore('nav',{
    
       {
       name: "service", path: "/service"
+    },
+    {
+      name: "login", path: "/login"
     }],
+       
+  }),
+});
+//Special
+
+const useSpecialStore = defineStore('special',{
+  state: ()=>({
+    specials: [
+        {
+          image:"assets/img/food/img-7.jpg",
+          title:"Low carb spaghetti marinara",
+          price: "$ 14.5",
+          s_price:"$ 10.5",
+          description:"Delicious spaghetti marinara, on the table in 20 minutes. By swapping out spaghetti for zucchini noodles you turn this hearty seafood dish into a low carb delight."
+
+        },
+        {
+          image:"assets/img/food/honey-orange.jpeg",
+          title:"honey orange",
+          price: "$ 17.00",
+          s_price:"$ 13.5",
+          description:"These chicken drumsticks are coated in honey and spice and all things nice."
+        },{
+          image:"assets/img/food/spring-feta-and-lamb-salad.jpeg",
+          title:"Spring feta and lamb salad",
+          price: "$ 18.50",
+          s_price:"$ 14.5",
+          description:"Treat the family to this delicious and healthy spring feta & lamb salad."
+        }],
        
   }),
 });
@@ -167,6 +199,7 @@ const useNavStore = defineStore('nav',{
 export {useHeroStore, useNavStore, 
   useBreafastStore, useLunchStore,
   useDinnerStore, useServicesStore,
+  useSpecialStore
   
   
 

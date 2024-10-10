@@ -15,8 +15,8 @@
               <div class="container">
                 <div class="row">
                   <div class="col-md-6">
-                    <div class="detail-box">
-                      <h1>
+                    <div class="detail-box ">
+                      <h1 class="koulen-regular ">
                        {{ $t(item.title_hero) }}
                       
                       </h1>

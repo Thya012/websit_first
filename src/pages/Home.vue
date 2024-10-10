@@ -5,6 +5,7 @@
 
     <Menu></Menu>
     <Special></Special>
+    
     <GetApi></GetApi>
    
     <Services></Services>
@@ -18,6 +19,7 @@ import Slider from '@/components/Slider.vue';
 import About from '@/components/About.vue';
 import Menu from '@/components/Menu.vue';
 import Special from '@/components/Special.vue';
+//import Special_test from '@/components/Special_test.vue';
 //import GetApi from '@/components/api/GetApi.vue';
 //import OurFood from '@/components/OurFood.vue';
 import Services from './Services.vue';
@@ -34,6 +36,7 @@ export default {
         Services,
         Menu,
         Special,
+        
         GetApi,
         About,
     },

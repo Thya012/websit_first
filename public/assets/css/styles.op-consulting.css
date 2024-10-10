@@ -42276,7 +42276,11 @@ pre[class*="language-"] .toolbar-item a {
   }
   .g-pa-140 {
     padding: 10rem !important;
-  }
+  }.koulen-regular {
+  font-family: "Koulen", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
   .g-pa-145 {
     padding: 10.35714rem !important;
   }

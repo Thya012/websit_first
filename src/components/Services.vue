@@ -18,9 +18,9 @@
                <img :src="item.image" alt="" width="60px">
               </span>
               <h3 class="h6 text-uppercase g-font-weight-600 g-mb-25">
-                <a class="g-color-black g-color-primary--hover g-text-underline--none--hover" href="#!">{{ item.title }}</a>
+                <a class="g-color-black g-color-primary--hover g-text-underline--none--hover" href="#!">{{ $t(item.title) }}</a>
               </h3>
-              <p class="g-font-size-default mb-0 " style="text-align: justify;">{{ item.description }}</p>
+              <p class="g-font-size-default mb-0 " style="text-align: justify;">{{ $t(item.description) }}</p>
             </div>
 
            
