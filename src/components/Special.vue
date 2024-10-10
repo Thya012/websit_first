@@ -11,7 +11,7 @@
           <article class="g-bg-white">
             <!-- Figure Image -->
             <figure>
-              <img class="w-90 g-grayscale-100x g-grayscal0--hover g-transition-0_3 g-transition--ease-in"
+              <img class="w-100 g-grayscale-100x g-grayscale-0--hover g-transition-0_3 g-transition--ease-in"
                 :src="item.image" alt="Image Description">
             </figure>
             <!-- End Figure Image -->
