@@ -173,7 +173,7 @@ const useSpecialStore = defineStore('special',{
           title:"Low carb spaghetti marinara",
           price: "$ 14.5",
           s_price:"$ 10.5",
-          description:"Delicious spaghetti marinara, on the table in 20 minutes. By swapping out spaghetti for zucchini noodles you turn this hearty seafood dish into a low carb delight."
+          description:"s_desc1"
 
         },
         {
@@ -181,13 +181,13 @@ const useSpecialStore = defineStore('special',{
           title:"honey orange",
           price: "$ 17.00",
           s_price:"$ 13.5",
-          description:"These chicken drumsticks are coated in honey and spice and all things nice."
+          description:"s_desc2"
         },{
           image:"assets/img/food/spring-feta-and-lamb-salad.jpeg",
           title:"Spring feta and lamb salad",
           price: "$ 18.50",
           s_price:"$ 14.5",
-          description:"Treat the family to this delicious and healthy spring feta & lamb salad."
+          description:"s_desc3"
         }],
        
   }),

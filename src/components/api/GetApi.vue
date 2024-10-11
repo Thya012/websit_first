@@ -9,8 +9,11 @@
     <!-- End Heading -->
 
     <div class="row g-mx-minus-25 g-mb-40">
-      <Card class="col-6 col-lg-3 g-px-25 g-mb-50" v-for="(course, index) in courses" :key="index" :title="course.title"
-        :price="course.price" :short-description="course.shortDescription" :url="course.titleURL">
+      <Card class="col-6 col-lg-3 g-px-25 g-mb-50" v-for="(course, index) in courses" :key="index" 
+        :title="course.full_name"
+        :price="course.owner.id" 
+        :short-description="course.description" 
+        :url="course.titleURL">
       </Card>
     </div>
     <div class="text-center">
@@ -40,7 +43,7 @@ export default {
     try {
      
       const response = await axios.get(courseAPI());
-      //console.log(courseAPI)
+      //console.log(courseAPI())
      
       
       const courses = response.data;

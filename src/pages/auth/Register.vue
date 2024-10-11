@@ -18,7 +18,7 @@
                                             data-mdb-input-initialized="true">
                                             <label class="form-label" for="form3Example1c"
                                                 style="margin-right: 20px;">Your Name</label>
-                                            <input type="text" name="name" v-model="name">
+                                            <input type="text" name="name" v-model="name" placeholder="Your Name">
                                             <div class="form-notch">
 
                                                 <div class="form-notch-middle"
@@ -43,6 +43,19 @@
                                                 </div>
 
                                             </div>
+                                        </div>
+                                    </div>
+                                    <div data-mdb-input-init="" class="form-outline flex-fill mb-0"
+                                        data-mdb-input-initialized="true">
+                                        <label class="form-label" for="form3Example1c"
+                                            style="margin-right: 20px;">Password</label>
+                                        <Field type="password" name="password" required placeholder="password" />
+                                        <div class="form-notch">
+
+                                            <div class="form-notch-middle" style="padding-top: 20px; font-size: 10px;">
+                                                <ErrorMessage name="email" class="alert alert-danger" />
+                                            </div>
+
                                         </div>
                                     </div>
 
@@ -76,8 +89,7 @@
                             </div>
                             <div class="col-md-10 col-lg-6 col-xl-7 d-flex align-items-center order-1 order-lg-2">
 
-                                <img src="assets/img/signup.webp"
-                                    class="img-fluid" alt="Sample image">
+                                <img src="assets/img/signup.webp" class="img-fluid" alt="Sample image">
 
                             </div>
                         </div>

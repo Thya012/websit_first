@@ -4,7 +4,7 @@
     <div class="container ">
       <div class=" g-brd-primary ">
         <h2 class="text-uppercase u-heading-v2__title g-line-height-1_3 g-font-weight-700 g-font-size-26 g-mb-60">
-          Special offer</h2>
+          {{ $t('s_offer') }}</h2>
       </div>
       <div class="row">
         <div class="col-md-6 col-lg-4 g-mb-20 g-mb-100--md" v-for="(item, index) in specials" :key="index">
@@ -22,7 +22,7 @@
 
               <div class="d-flex justify-content-between">
                 <em class="align-self-center g-font-style-normal g-font-size-default g-theme-color-gray-light-v2">{{
-                  item.description }}</em>
+                  $t(item.description) }}</em>
               </div>
               <div class="align-self-center">
                 <div class="g-font-weight-700 g-font-size-16">
@@ -33,8 +33,7 @@
             </footer>
             <div class="align-self-center g-py-20">
               <router-link to="/special"
-                class="btn btn-lg text-uppercase u-btn-primary g-font-weight-700 g-font-size-12 g-color-white-opacity-0_7 g-py-12 g-py-15--md g-px-20 g-px-40--md">Learn
-                More</router-link>
+                class="btn btn-lg text-uppercase u-btn-primary g-font-weight-700 g-font-size-12 g-color-white-opacity-0_7 g-py-12 g-py-15--md g-px-20 g-px-40--md">{{$t('read')}}</router-link>
             </div>
             <!-- End Article Content -->
           </article>

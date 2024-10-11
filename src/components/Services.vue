@@ -3,11 +3,11 @@
      <section id="services-section" class="g-bg-secondary g-py-100">
         <div class="container g-max-width-780 text-center g-mb-60">
           <div class="text-center text-uppercase u-heading-v5-3 u-heading-v5-color-primary u-heading-v5-rounded-50x g-mb-20">
-            <h1 class="g-font-weight-700 g-color-primary g-mb-15">Services</h1>
-            <h2 class="u-heading-v5__title g-line-height-1_2 g-font-weight-700 g-font-size-32 g-font-size-40--md g-bg-primary--before g-pb-40">What do we propose</h2>
+            <h1 class="g-font-weight-700 g-color-primary g-mb-15">{{ $t('service') }}</h1>
+            <h2 class="u-heading-v5__title g-line-height-1_2 g-font-weight-700 g-font-size-32 g-font-size-40--md g-bg-primary--before g-pb-40">{{ $t('we_de') }}</h2>
           </div>
 
-          <p class="mb-0">The restaurants make you love. Find the right food and groceries to suit your mood</p>
+          <p class="mb-0">{{ $t('s_title') }}</p>
         </div>
 
         <div class="container text-center">
