@@ -1,5 +1,5 @@
 function courseAPI() {
-    console.log(process.env.NODE_ENV)
+    //console.log(process.env.NODE_ENV)
     if (process.env.NODE_ENV == "development") {
         //return "/v1/courses"
         return process.env.VUE_APP_API
