@@ -22,7 +22,7 @@ const messages = {
         logo: "J Lin Restuarent",
         s_offer:"Specail Offer",
 
-        fried_food: 'Fried food',
+        fried_food: 'Fried food for testing',
         roasting: 'Roasting',
         soup: 'Soup',
         dec_soup: 'Soup is a primarily liquid food, generally served warm or hot (but may be cool or cold), that is made by combining ingredients of meat or vegetables with stock, milk, or water.',
